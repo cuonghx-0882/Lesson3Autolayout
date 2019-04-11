@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
     // MARK:
     @IBAction func handleButton(_ sender: UIButton) {
-        var tmp: Double = 0
+        var tmp : Double = 0
         switch sender.tag {
         case 1:
             self.computingButton?.backgroundColor = Color.orange
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         case 4, 8, 12, 16:
             if let btn = self.computingButton {
                 btn.backgroundColor = Color.orange
-                if (sender !== self.computingButton){
+                if sender !== self.computingButton && !calculated{
                     var s = numberResult + btn.currentTitle!  + numberCaculate
                     s = s.replacingOccurrences(of: "X", with: "*")
                     let expn = NSExpression(format:s)
@@ -69,19 +69,34 @@ class ViewController: UIViewController {
             self.computingButton = sender
             sender.backgroundColor = UIColor(displayP3Red: 100/256, green: 100/256, blue: 100/256, alpha: 1)
             break
-        case 18 :
+        case 18:
             numberResult += "."
             break
         case 19:
             if let button = self.computingButton {
-                var s = numberResult + button.currentTitle!  + numberCaculate
-                s = s.replacingOccurrences(of: "X", with: "*")
-                let expn = NSExpression(format:s)
-                self.numberCaculate = "0"
-                self.numberResult = "\(expn.expressionValue(with: nil, context: nil) ?? "NA")"
+                var num: Double = 0
+                switch button.currentTitle! {
+                case "+" :
+                    num = Double(numberResult)! + Double(numberCaculate)!
+                    break
+                case "-" :
+                    num = Double(numberResult)! - Double(numberCaculate)!
+                    break
+                case "X" :
+                    num = Double(numberResult)! * Double(numberCaculate)!
+                    break
+                case "/" :
+                    num = Double(numberResult)! / Double(numberCaculate)!
+                    break
+                default :
+                    break
+                }
+                self.numberResult = num.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", num) : String(num)
                 self.computingButton?.backgroundColor = Color.orange
-                self.computingButton = nil
+                //                self.computingButton = nil
                 self.calculated = true
+            }else {
+                calculated = false
             }
             break
         case 2:
