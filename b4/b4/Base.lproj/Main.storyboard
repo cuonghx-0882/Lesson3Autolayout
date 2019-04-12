@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wkl-mi-LM0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,11 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Idf-Wq-lJF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Idf-Wq-lJF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6M-gt-nYR">
-                                <rect key="frame" x="32" y="75" width="311" height="161"/>
+                                <rect key="frame" x="32" y="80" width="311" height="161"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PassWord" textAlignment="natural" minimumFontSize="17" background="bg" translatesAutoresizingMaskIntoConstraints="NO" id="jjy-Yy-CZf">
                                         <rect key="frame" x="16" y="62" width="279" height="30"/>
@@ -41,6 +41,7 @@
                                             <constraint firstAttribute="height" constant="30" id="a2B-Yf-HoS"/>
                                         </constraints>
                                         <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqC-hB-NXX">
@@ -107,7 +108,7 @@
                             <constraint firstItem="Idf-Wq-lJF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WYr-gt-LdM"/>
                             <constraint firstItem="j6M-gt-nYR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z2A-z2-3kj"/>
                             <constraint firstItem="Idf-Wq-lJF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aRk-1O-sTl"/>
-                            <constraint firstItem="j6M-gt-nYR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="l2x-Wj-ggc"/>
+                            <constraint firstItem="j6M-gt-nYR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="l2x-Wj-ggc"/>
                             <constraint firstItem="Idf-Wq-lJF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qHX-JH-v0u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -121,7 +122,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+            <point key="canvasLocation" x="-1" y="142"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="WOL-Rm-jKb">
+            <objects>
+                <viewController id="Wkl-mi-LM0" customClass="MainViewController" customModule="b4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="McE-6L-Qbf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="F3m-P7-rDb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXo-o8-KGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="122"/>
         </scene>
     </scenes>
     <resources>

@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95037FA822601AC300291810 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95037FA722601AC300291810 /* MainViewController.swift */; };
 		95D89A43225F95510071BFB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D89A42225F95510071BFB5 /* AppDelegate.swift */; };
 		95D89A45225F95510071BFB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D89A44225F95510071BFB5 /* ViewController.swift */; };
 		95D89A48225F95510071BFB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D89A46225F95510071BFB5 /* Main.storyboard */; };
 		95D89A4A225F95530071BFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D89A49225F95530071BFB5 /* Assets.xcassets */; };
 		95D89A4D225F95530071BFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D89A4B225F95530071BFB5 /* LaunchScreen.storyboard */; };
-		95D89A55225FAC620071BFB5 /* 108564350-email-envelope-icon-vector-black-mail-message-symbol-isolated-on-transparent-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95D89A54225FAC620071BFB5 /* 108564350-email-envelope-icon-vector-black-mail-message-symbol-isolated-on-transparent-background.jpg */; };
 		95D89A57225FAECC0071BFB5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D89A56225FAECC0071BFB5 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95037FA722601AC300291810 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		95D89A3F225F95510071BFB5 /* b4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = b4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D89A42225F95510071BFB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95D89A44225F95510071BFB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,7 +25,6 @@
 		95D89A49225F95530071BFB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95D89A4C225F95530071BFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95D89A4E225F95530071BFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95D89A54225FAC620071BFB5 /* 108564350-email-envelope-icon-vector-black-mail-message-symbol-isolated-on-transparent-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "108564350-email-envelope-icon-vector-black-mail-message-symbol-isolated-on-transparent-background.jpg"; sourceTree = "<group>"; };
 		95D89A56225FAECC0071BFB5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,11 +60,11 @@
 			children = (
 				95D89A42225F95510071BFB5 /* AppDelegate.swift */,
 				95D89A44225F95510071BFB5 /* ViewController.swift */,
+				95037FA722601AC300291810 /* MainViewController.swift */,
 				95D89A46225F95510071BFB5 /* Main.storyboard */,
 				95D89A49225F95530071BFB5 /* Assets.xcassets */,
 				95D89A4B225F95530071BFB5 /* LaunchScreen.storyboard */,
 				95D89A4E225F95530071BFB5 /* Info.plist */,
-				95D89A54225FAC620071BFB5 /* 108564350-email-envelope-icon-vector-black-mail-message-symbol-isolated-on-transparent-background.jpg */,
 				95D89A56225FAECC0071BFB5 /* Extension.swift */,
 			);
 			path = b4;
@@ -129,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				95D89A4D225F95530071BFB5 /* LaunchScreen.storyboard in Resources */,
-				95D89A55225FAC620071BFB5 /* 108564350-email-envelope-icon-vector-black-mail-message-symbol-isolated-on-transparent-background.jpg in Resources */,
 				95D89A4A225F95530071BFB5 /* Assets.xcassets in Resources */,
 				95D89A48225F95510071BFB5 /* Main.storyboard in Resources */,
 			);
@@ -145,6 +144,7 @@
 				95D89A57225FAECC0071BFB5 /* Extension.swift in Sources */,
 				95D89A45225F95510071BFB5 /* ViewController.swift in Sources */,
 				95D89A43225F95510071BFB5 /* AppDelegate.swift in Sources */,
+				95037FA822601AC300291810 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
